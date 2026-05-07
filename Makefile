@@ -4,8 +4,8 @@ CC = gcc
 SRC = hellpaper.c
 
 TARGET = hellpaper
-CFLAGS = -Wall -O2
-LIBS = -lraylib -lm #-lGL -lpthread -ldl -lrt
+CFLAGS = -Wall -O2 -I$(shell brew --prefix raylib)/include
+LIBS = -lraylib -lm -L$(shell brew --prefix raylib)/lib -framework OpenGL -framework Cocoa -framework IOKit -framework CoreVideo
 
 PREFIX ?= /usr/local
 BINDIR = $(PREFIX)/bin

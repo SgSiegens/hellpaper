@@ -19,7 +19,7 @@
 #include <math.h>
 #include <pthread.h>
 #include <stdatomic.h>
-#include <sys/sysinfo.h>
+// #include <sys/sysinfo.h>
 #include <ctype.h>
 #include <stdarg.h>
 
